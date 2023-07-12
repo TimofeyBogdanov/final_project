@@ -1,0 +1,66 @@
+.desktopCard {
+  height: 225px;
+  max-width: 400px;
+  min-width: 170px;
+  margin: 0 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.desktopCard img {
+  width: 64px;
+  margin: 10px;
+}
+
+.mobileCard {
+  height: 225px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mobileCard img {
+  width: 57px;
+  height: 64px;
+  margin: 10px;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.desktopContent {
+  padding: 10px 10px 35px 10px;
+  font-family: 'inter-regular';
+  font-size: 17px;
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .desktopContent {
+    padding: 5px 5px 10px 5px;
+    font-family: 'inter-regular';
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 763px) and (max-width: 1024px) {
+  .mobileContent {
+    padding: 5px 5px 25px 5px;
+    font-family: 'inter-regular';
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 762px) {
+  .mobileContent {
+    padding: 5px 5px 25px 5px;
+    font-family: 'inter-regular';
+    font-size: 14px;
+  }
+}

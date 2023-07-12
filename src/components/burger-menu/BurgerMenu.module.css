@@ -1,0 +1,120 @@
+.menuButton,
+.menuButtonOpen {
+    width: 30px;
+    height: 25px;
+    margin: 30px 0 30px 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.menuButton div {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    right: 10px;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    background-color: var(--main-color-1);
+}
+
+.menuButtonOpen {
+    z-index: 2;
+}
+
+.menuButtonOpen div {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    right: 10px;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    background-color: var(--main-color-3);
+}
+
+.menuButton div:nth-child(1) {
+    top: 0px;
+}
+
+.menuButton div:nth-child(2) {
+    top: 9px;
+}
+
+.menuButton div:nth-child(3) {
+    top: 18px;
+}
+
+.menuButtonOpen div:nth-child(1) {
+    top: 12px;
+    transform: rotate(135deg);
+}
+
+.menuButtonOpen div:nth-child(2) {
+    display: none;
+    left: -60px;
+}
+
+.menuButtonOpen div:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+}
+
+.mobileMenuHidden {
+    display: none;
+}
+
+.mobileMenuVisible {
+    position: absolute;
+    right: 0;
+    top: 0%;
+    min-width: 100%;
+    min-height: 110%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: var(--main-color-1);
+}
+
+.navMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.navMobile a {
+    color: var(--main-color-3);
+    margin: 10px;
+}
+
+.mobileAuth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.mobileRegister {
+    margin: 15px;
+    font-size: 16px;
+    background-color: var(--main-color-1);
+    color: var(--main-color-3);
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+.mobileEnter,
+.mobileExit {
+    width: 295px;
+    max-height: 52px;
+    padding: 16px;
+    font-size: 20px;
+    font-family: "inter-medium";
+    text-align: center;
+    background-color: var(--second-color-2);
+    color: var(--main-color-2);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}

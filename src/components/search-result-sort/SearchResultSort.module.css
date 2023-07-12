@@ -1,0 +1,19 @@
+.cardTypesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cardType {
+  background-color: var(--second-color-1);
+  display: block;
+  margin-top: 14px;
+  padding: 4px 13px;
+  max-width: fit-content;
+  color: #000000;
+  font-family: 'inter-regular';
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  border-radius: 5px;
+}
